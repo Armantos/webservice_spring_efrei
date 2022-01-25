@@ -10,8 +10,30 @@ http://localhost:8080/sessions
 
 POST avec les json
 http://localhost:8080/movies
+{
+  "title": "Avengers Endgame66",
+  "duration": "3h01min",
+  "language": "Français",
+  "subtitles": "Non",
+  "director": "Joe Russo, Anthony Russo",
+  "mainActors": "Robert Downey Jr., Chris Evans, Mark Ruffalo",
+  "minAge": 8,
+  "startingDate": "24 avril 2019",
+  "endDate": "24 juin 2019"
+}
+
 http://localhost:8080/theatres
+
+{
+  "name": "Theatre inséré",
+  "address": "adresse du théatre",
+  "city": "Cachan"
+}
+
 http://localhost:8080/sessions
+
+{"startingTime": "15",
+"days": "JEU SAM"}
 
 PUT
 http://localhost:8080/movies/6 avec Json pour pour modifier un film
@@ -47,3 +69,5 @@ INSERT INTO movies_theatres(movie_id,theatre_id) VALUES (5,1);
 INSERT INTO movies_theatres(movie_id,theatre_id) VALUES (3,2);
 INSERT INTO movies_theatres(movie_id,theatre_id) VALUES (3,3);
 INSERT INTO movies_theatres(movie_id,theatre_id) VALUES (2,4);
+
+
